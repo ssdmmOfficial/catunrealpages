@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Unreal Helper</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --section-bg: #f5f5f7;
+            --btn-bg: #e5e5ea;
+            --btn-active: #007AFF;
+            --btn-text: #000;
+            --btn-text-active: #fff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #dfdfdf;
+                --bg-color: #1c1c1e;
+                --section-bg: #2c2c2e;
+                --btn-bg: #3a3a3c;
+                --btn-text: #fff;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 语言切换器样式 */
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .lang-btn {
+            border: none;
+            background-color: var(--btn-bg);
+            color: var(--btn-text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background-color: var(--btn-active);
+            color: var(--btn-text-active);
+            font-weight: 600;
+        }
+
+        .lang-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* 内容样式 */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        h3 {
+            margin-top: 25px;
+            font-size: 1.1em;
+            color: var(--primary-color);
+        }
+
+        p, li {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .box {
+            background-color: var(--section-bg);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px;
+        }
+
+        /* 隐藏类 */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            // 获取所有内容块和按钮
+            const zhContent = document.getElementById('content-zh');
+            const enContent = document.getElementById('content-en');
+            const zhBtn = document.getElementById('btn-zh');
+            const enBtn = document.getElementById('btn-en');
+
+            if (lang === 'zh') {
+                zhContent.classList.remove('hidden');
+                enContent.classList.add('hidden');
+                zhBtn.classList.add('active');
+                enBtn.classList.remove('active');
+                document.documentElement.lang = 'zh-CN';
+            } else {
+                zhContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                zhBtn.classList.remove('active');
+                enBtn.classList.add('active');
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="lang-switch">
+        <button id="btn-zh" class="lang-btn active" onclick="setLanguage('zh')">中文</button>
+        <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <div id="content-zh">
+        <h1>隐私政策</h1>
+        <div class="subtitle">
+            应用名称：Unreal Helper<br>
+            生效日期：2026年1月1日
+        </div>
+
+        <p>我们非常重视您的隐私。本隐私政策旨在向您说明 <strong>Unreal Helper</strong>（以下简称“本应用”）如何收集、使用和保护您的信息。</p>
+
+        <div class="box">
+            <strong>核心承诺：</strong><br>
+            我们不收集、不存储、不向第三方出售您的任何个人身份信息。您的数据完全属于您自己，存储在您的设备本地或您的 iCloud 账户中。
+        </div>
+
+        <h2>1. 数据收集与存储</h2>
+        
+        <h3>1.1 用户生成内容</h3>
+        <p>您在应用中创建的分类、节点数据、代码片段等内容，仅存储在以下位置：</p>
+        <ul>
+            <li><strong>本地存储：</strong> 存储在您 Mac 设备的本地硬盘中。</li>
+            <li><strong>iCloud 同步（如开启）：</strong> 如果您在设置中选择了“iCloud 云盘”模式，数据将上传至 Apple 的 iCloud 服务器，以便在您的不同设备间同步。</li>
+        </ul>
+        <p>开发者无法访问、查看或使用您的任何数据内容。</p>
+
+        <h3>1.2 文件访问权限</h3>
+        <p>为了保存数据到您指定的本地目录，本应用使用了 macOS 的 App Sandbox 安全机制。我们需要您明确授权（选择文件夹）才能获得读写权限。该权限仅用于存取应用所需的数据文件（.uebin），不会访问您设备上的其他隐私文件。</p>
+
+        <h2>2. 内购与订阅服务</h2>
+        <p>本应用提供应用内购买（In-App Purchase）订阅服务（月度、季度、年度会员）。</p>
+        <ul>
+            <li><strong>交易处理：</strong> 所有的支付交易均由 Apple (App Store) 直接处理。我们无法获取您的信用卡号、银行账户或账单地址等敏感支付信息。</li>
+            <li><strong>交易记录：</strong> 我们仅从 Apple 接收匿名的交易回执，用于验证您是否解锁了高级版功能。</li>
+        </ul>
+
+        <h2>3. iCloud 数据安全</h2>
+        <p>当您使用 iCloud 同步功能时，您的数据传输和存储均由 Apple 的 iCloud 服务管理。数据在传输和静止状态下通常是加密的。具体的安全措施请参阅 <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple 隐私政策</a>。</p>
+
+        <h2>4. 第三方服务</h2>
+        <p>本应用仅依赖 Apple 提供的原生服务（StoreKit, CloudKit）。本应用不包含任何第三方的广告 SDK，也不包含任何用于追踪用户行为的第三方分析工具。</p>
+
+        <h2>5. 用户权利</h2>
+        <p>您对您的数据拥有完全的控制权：</p>
+        <ul>
+            <li><strong>访问与修改：</strong> 您可以随时在应用内查看和修改您的数据。</li>
+            <li><strong>删除数据：</strong> 您可以通过删除应用、清空本地文件夹或在系统设置中管理 iCloud 存储空间来彻底删除您的数据。</li>
+            <li><strong>管理订阅：</strong> 您可以随时在 App Store 的账户设置中取消订阅。</li>
+        </ul>
+
+        <h2>6. 联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
+        <p>电子邮箱：<a href="mailto:catunrealsoftware@gmail.com">catunrealsoftware@gmail.com</a></p>
+
+        <footer>
+            &copy; 2026 Unreal Helper. 保留所有权利。
+        </footer>
+    </div>
+
+    <div id="content-en" class="hidden">
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">
+            App Name: Unreal Helper<br>
+            Effective Date: January 1, 2026
+        </div>
+
+        <p>We take your privacy seriously. This Privacy Policy explains how <strong>Unreal Helper</strong> ("we", "us", or "our") collects, uses, and protects your information.</p>
+
+        <div class="box">
+            <strong>Core Commitment:</strong><br>
+            We do not collect, store, or sell your personal identifiable information to third parties. Your data belongs entirely to you and is stored locally on your device or in your iCloud account.
+        </div>
+
+        <h2>1. Data Collection and Storage</h2>
+        
+        <h3>1.1 User Generated Content</h3>
+        <p>The categories, node data, and code snippets you create within the app are stored only in the following locations:</p>
+        <ul>
+            <li><strong>Local Storage:</strong> Stored locally on your Mac's hard drive.</li>
+            <li><strong>iCloud Sync (if enabled):</strong> If you select "iCloud Drive" mode in settings, data is uploaded to Apple's iCloud servers to synchronize across your devices.</li>
+        </ul>
+        <p>The developer cannot access, view, or use any of your content.</p>
+
+        <h3>1.2 File Access Permissions</h3>
+        <p>To save data to your specified local directory, this app utilizes the macOS App Sandbox security mechanism. We require your explicit authorization (by selecting a folder) to obtain read/write access. This permission is used solely to access the app's required data files (.uebin) and does not access other private files on your device.</p>
+
+        <h2>2. In-App Purchases and Subscriptions</h2>
+        <p>This app offers In-App Purchase subscription services (Monthly, Quarterly, Yearly).</p>
+        <ul>
+            <li><strong>Transaction Processing:</strong> All payment transactions are handled directly by Apple (App Store). We do not have access to your credit card number, bank account, or billing address.</li>
+            <li><strong>Transaction Records:</strong> We only receive anonymous transaction receipts from Apple to verify if you have unlocked premium features.</li>
+        </ul>
+
+        <h2>3. iCloud Data Security</h2>
+        <p>When you use the iCloud sync feature, the transmission and storage of your data are managed by Apple's iCloud service. Data is generally encrypted in transit and at rest. For specific security measures, please refer to the <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple Privacy Policy</a>.</p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>This app relies solely on native services provided by Apple (StoreKit, CloudKit). This app does not contain any third-party advertising SDKs, nor does it contain any third-party analytics tools used to track user behavior.</p>
+
+        <h2>5. User Rights</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Access and Modify:</strong> You can view and modify your data within the app at any time.</li>
+            <li><strong>Delete Data:</strong> You can completely delete your data by deleting the app, clearing the local folder, or managing iCloud storage in system settings.</li>
+            <li><strong>Manage Subscriptions:</strong> You can cancel subscriptions at any time in your App Store account settings.</li>
+        </ul>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p>Email: <a href="mailto:catunrealsoftware@gmail.com">catunrealsoftware@gmail.com</a></p>
+
+        <footer>
+            &copy; 2026 Unreal Helper. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
