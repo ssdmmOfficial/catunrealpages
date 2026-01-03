@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Agreement - Node Tools for Unreal</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #f2f2f7;
+            --text-color: #1c1c1e;
+            --card-bg: #ffffff;
+            --secondary-text: #8e8e93;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5ea;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--secondary-text);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        p, li {
+            font-size: 14px;
+            color: #3a3a3c;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .btn-toggle {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-toggle:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        .lang-en { display: none; }
+        .lang-zh { display: block; }
+
+        /* 特别强调的免责声明框 */
+        .disclaimer-box {
+            background-color: #fbfbfd;
+            border-left: 4px solid #ff9500;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1 id="page-title">用户许可协议</h1>
+        <button class="btn-toggle" onclick="toggleLanguage()">Switch to English</button>
+    </div>
+
+    <div id="content-zh" class="lang-zh">
+        <p class="meta-info">生效日期：2026年1月1日</p>
+        
+        <div class="disclaimer-box">
+            <strong>重要免责声明：</strong> “虚幻引擎 (Unreal Engine)”是 Epic Games, Inc. 的商标或注册商标。本应用<strong>“虚幻节点助手”</strong>由第三方独立开发，旨在辅助用户使用虚幻引擎，但<strong>绝非</strong> Epic Games 的官方产品，也未获得 Epic Games 的赞助、认可或附属授权。
+        </div>
+
+        <p>本《最终用户许可协议》（以下简称“本协议”）是您（个人或单一实体）与应用开发者（以下简称“我们”）之间关于使用<strong>“虚幻节点助手”</strong>（以下简称“本应用”）的法律协议。</p>
+
+        <h2>1. 协议确认</h2>
+        <p>您承认本协议仅在您与我们之间签订，而非与 Apple Inc.（“Apple”）签订。我们全权负责本应用及其内容。Apple 对本应用不承担任何责任。</p>
+
+        <h2>2. 许可范围</h2>
+        <p>我们要授予您一项不可转让的非独占许可，允许您在您拥有或控制的任何 Apple 品牌产品上使用本应用，并须遵守 App Store 服务条款中规定的“使用规则”。</p>
+
+        <h2>3. 维护与支持</h2>
+        <p>我们全权负责根据适用法律要求提供本应用的维护和支持服务。您承认 Apple 没有义务针对本应用提供任何维护和支持服务。</p>
+
+        <h2>4. 保证免责</h2>
+        <p><strong>本应用按“原样”和“可用”状态提供，不含任何形式的保证。</strong>在法律允许的最大范围内，我们明确否认所有明示或默示的保证，包括但不限于适销性、特定用途适用性和非侵权的默示保证。如果本应用未能符合任何适用的保证，您可以通知 Apple，Apple 将向您退还购买价格（如有）；Apple 在法律允许的最大范围内不再承担任何其他保证义务。</p>
+
+        <h2>5. 责任限制</h2>
+        <p><strong>在适用法律允许的最大范围内，无论出于何种原因（包括疏忽），我们对您遭受的人身伤害或任何附带的、特殊的、间接的或后果性的损害（包括但不限于利润损失、数据丢失、业务中断等）概不负责。</strong>在任何情况下，我们对您的全部赔偿责任（除涉及人身伤害的适用法律另有规定外）均不超过您购买本应用所支付的金额（如有）。即使上述补救措施未能达到其基本目的，本限制依然适用。</p>
+
+        <h2>6. 产品索赔</h2>
+        <p>我们（而非 Apple）负责解决您或任何第三方提出的与本应用有关的任何索赔，包括：(i) 产品责任索赔；(ii) 关于本应用不符合任何适用法律或监管要求的索赔；以及 (iii) 依据消费者保护法或类似法律提出的索赔。</p>
+
+        <h2>7. 知识产权</h2>
+        <p>如果是第三方声称本应用侵犯了其知识产权，我们（而非 Apple）将负责调查、辩护、和解和解除任何此类侵权索赔。</p>
+
+        <h2>8. 法律合规性</h2>
+        <p>您声明并保证：(i) 您不在受美国政府禁运的国家/地区，或被美国政府指定为“支持恐怖主义”的国家/地区；(ii) 您未被列入美国政府的任何禁止或限制方名单。</p>
+
+        <h2>9. 第三方受益人</h2>
+        <p>您同意 Apple 及其子公司是本协议的第三方受益人。一旦您接受本协议条款，Apple 将有权作为第三方受益人对您执行本协议。</p>
+
+        <h2>10. 联系方式</h2>
+        <p>如有疑问，请联系：<br>
+        电子邮箱：<a href="mailto:catunrealsoftware@gmail.com">catunrealsoftware@gmail.com</a></p>
+    </div>
+
+    <div id="content-en" class="lang-en">
+        <p class="meta-info">Effective Date: January 1, 2026</p>
+
+        <div class="disclaimer-box">
+            <strong>Disclaimer:</strong> "Unreal Engine" is a trademark or registered trademark of Epic Games, Inc. This application, <strong>"Node Tools for Unreal"</strong>, is developed independently by a third party. It is <strong>NOT</strong> affiliated with, endorsed by, sponsored by, or associated with Epic Games, Inc.
+        </div>
+
+        <p>This End User License Agreement ("Agreement") is a legal agreement between you and the developer ("we" or "us") regarding your use of <strong>"Node Tools for Unreal"</strong> (the "App").</p>
+
+        <h2>1. Acknowledgement</h2>
+        <p>You acknowledge that this Agreement is concluded between you and us only, and not with Apple Inc. ("Apple"). We are solely responsible for the App and the content thereof.</p>
+
+        <h2>2. Scope of License</h2>
+        <p>The license granted to you for the App is limited to a non-transferable license to use the App on any Apple-branded products that you own or control and as permitted by the Usage Rules set forth in the App Store Media Services Terms and Conditions.</p>
+
+        <h2>3. Maintenance and Support</h2>
+        <p>We are solely responsible for providing any maintenance and support services with respect to the App. You acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.</p>
+
+        <h2>4. Warranty Disclaimer</h2>
+        <p><strong>The App is provided "AS IS" without warranty of any kind.</strong> To the maximum extent permitted by applicable law, we confirm usage requires no warranty. In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App to you (if applicable); Apple will have no other warranty obligation whatsoever with respect to the App.</p>
+
+        <h2>5. Limitation of Liability</h2>
+        <p><strong>To the extent not prohibited by law, in no event shall we be liable for personal injury, or any incidental, special, indirect or consequential damages whatsoever, including, without limitation, damages for loss of profits, loss of data, business interruption or any other commercial damages or losses, arising out of or related to your use or inability to use the App.</strong> In no event shall our total liability to you for all damages exceed the amount of fifty dollars ($50.00) or the amount you paid for the App, whichever is less.</p>
+
+        <h2>6. Product Claims</h2>
+        <p>We, not Apple, are responsible for addressing any claims of you or any third party relating to the App including: (i) product liability claims; (ii) any claim that the App fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation.</p>
+
+        <h2>7. Intellectual Property Rights</h2>
+        <p>In the event of any third-party claim that the App infringes that third party’s intellectual property rights, we, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.</p>
+
+        <h2>8. Legal Compliance</h2>
+        <p>You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.</p>
+
+        <h2>9. Third Party Beneficiary</h2>
+        <p>You acknowledge and agree that Apple, and Apple’s subsidiaries, are third-party beneficiaries of this Agreement, and that, upon your acceptance of the terms and conditions of this Agreement, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary thereof.</p>
+
+        <h2>10. Contact Information</h2>
+        <p>Email: <a href="mailto:catunrealsoftware@gmail.com">catunrealsoftware@gmail.com</a></p>
+    </div>
+</div>
+
+<script>
+    function toggleLanguage() {
+        const zhContent = document.getElementById('content-zh');
+        const enContent = document.getElementById('content-en');
+        const btn = document.querySelector('.btn-toggle');
+        const title = document.getElementById('page-title');
+
+        if (zhContent.style.display === 'none') {
+            zhContent.style.display = 'block';
+            enContent.style.display = 'none';
+            btn.textContent = 'Switch to English';
+            title.textContent = '最终用户许可协议 (EULA)';
+            document.documentElement.lang = 'zh-CN';
+        } else {
+            zhContent.style.display = 'none';
+            enContent.style.display = 'block';
+            btn.textContent = '切换到中文';
+            title.textContent = 'End User License Agreement';
+            document.documentElement.lang = 'en';
+        }
+    }
+</script>
+
+</body>
+</html>
