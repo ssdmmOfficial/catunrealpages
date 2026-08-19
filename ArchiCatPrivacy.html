@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ArchiCat</title>
+    <style>
+        :root { --primary-color: #007AFF; --text-color: #333; --bg-color: #ffffff; --section-bg: #f5f5f7; --btn-bg: #e5e5ea; }
+        @media (prefers-color-scheme: dark) { :root { --text-color: #dfdfdf; --bg-color: #1c1c1e; --section-bg: #2c2c2e; --btn-bg: #3a3a3c; } }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .lang-switch { display: flex; justify-content: flex-end; gap: 10px; margin-bottom: 40px; }
+        .lang-btn { border: none; background-color: var(--btn-bg); color: var(--text-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .lang-btn.active { background-color: var(--primary-color); color: #fff; }
+        h1 { text-align: center; }
+        .subtitle { text-align: center; color: #888; margin-bottom: 40px; }
+        .box { background-color: var(--section-bg); padding: 20px; border-radius: 12px; margin: 20px 0; }
+        .hidden { display: none; }
+        footer { margin-top: 60px; text-align: center; font-size: 0.8em; color: #888; }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            ['zh', 'zt', 'en'].forEach(l => {
+                document.getElementById('content-' + l).classList.toggle('hidden', l !== lang);
+                document.getElementById('btn-' + l).classList.toggle('active', l === lang);
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <div class="lang-switch">
+        <button id="btn-zh" class="lang-btn active" onclick="setLanguage('zh')">简体中文</button>
+        <button id="btn-zt" class="lang-btn" onclick="setLanguage('zt')">繁體中文</button>
+        <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <!-- 简体中文 -->
+    <div id="content-zh">
+        <h1>隐私政策</h1>
+        <div class="subtitle">应用名称：压缩猫 (ArchiCat)<br>生效日期：2026年8月19日</div>
+        <p>我们非常重视您的隐私。<strong>压缩猫 (ArchiCat)</strong> 是一款完全本地运行的解压缩工具，本隐私政策旨在向您说明我们如何处理您的信息。</p>
+        <div class="box"><strong>核心承诺：</strong>我们完全不收集、不存储、也不向任何第三方发送您的个人数据或文件内容。您的所有操作均在您的设备本地完成。</div>
+        <h2>1. 数据收集</h2>
+        <p>本应用不需要您注册账户，也不收集任何个人身份信息。您使用本应用处理的压缩文件、文件夹内容等，均在您的设备上进行处理，我们无法接触或查看这些数据。</p>
+        <h2>2. 权限说明</h2>
+        <p>为了完成压缩与解压功能，本应用仅在您明确授权的情况下访问选定的本地文件，不会扫描或访问您的系统其他私密位置。</p>
+        <h2>3. 第三方服务与广告</h2>
+        <p>本应用<strong>不包含</strong>任何第三方广告 SDK，也<strong>不包含</strong>任何用户行为跟踪或分析工具。</p>
+        <h2>4. 联系我们</h2>
+        <p>如有任何疑问，请联系：catunrealsoftware@gmail.com</p>
+    </div>
+
+    <!-- 繁体中文 -->
+    <div id="content-zt" class="hidden">
+        <h1>隱私權政策</h1>
+        <div class="subtitle">應用名稱：壓縮貓 (ArchiCat)<br>生效日期：2026年8月19日</div>
+        <p>我們非常重視您的隱私。<strong>壓縮貓 (ArchiCat)</strong> 是一款完全本地運行的解壓縮工具，本隱私權政策旨在向您說明我們如何處理您的資訊。</p>
+        <div class="box"><strong>核心承諾：</strong>我們完全不收集、不儲存、也不向任何第三方傳送您的個人數據或檔案內容。您的所有操作均在您的裝置本地完成。</div>
+        <h2>1. 數據收集</h2>
+        <p>本應用不需要您註冊帳戶，也不收集任何個人身份資訊。您使用本應用處理的壓縮檔案、檔案夾內容等，均在您的裝置上進行處理，我們無法接觸或查看這些數據。</p>
+        <h2>2. 權限說明</h2>
+        <p>為了完成壓縮與解壓功能，本應用僅在您明確授權的情況下存取選定的本地檔案，不會掃描或存取您的系統其他私密位置。</p>
+        <h2>3. 第三方服務與廣告</h2>
+        <p>本應用<strong>不包含</strong>任何第三方廣告 SDK，也<strong>不包含</strong>任何用戶行為追蹤或分析工具。</p>
+        <h2>4. 聯絡我們</h2>
+        <p>如有任何疑問，請聯繫：catunrealsoftware@gmail.com</p>
+    </div>
+
+    <!-- 英文 -->
+    <div id="content-en" class="hidden">
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">App Name: ArchiCat<br>Effective Date: August 19, 2026</div>
+        <p>We take your privacy seriously. <strong>ArchiCat</strong> is a utility that runs entirely locally on your device. This Privacy Policy explains our commitment to your data privacy.</p>
+        <div class="box"><strong>Core Commitment:</strong> We do not collect, store, or transmit your personal data or file contents to any third parties. All operations are performed strictly on your local device.</div>
+        <h2>1. Data Collection</h2>
+        <p>This app does not require account registration and does not collect any personally identifiable information. The files and folders you process with this app are handled entirely on your device, and we have no access to them.</p>
+        <h2>2. Permissions</h2>
+        <p>To perform compression and extraction, this app only accesses files you explicitly authorize. It does not scan or access other private areas of your system.</p>
+        <h2>3. Third-Party Services and Ads</h2>
+        <p>This app <strong>does not contain</strong> any third-party advertising SDKs, nor does it contain any analytics tools to track user behavior.</p>
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions, please contact: catunrealsoftware@gmail.com</p>
+    </div>
+
+    <footer>&copy; 2026 ArchiCat. All rights reserved.</footer>
+</body>
+</html>
